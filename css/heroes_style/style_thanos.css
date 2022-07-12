@@ -295,7 +295,7 @@ header {
 .hrs {
 }
 .hrs_content {
-    height: 660px;
+    height: 540px;
     padding-top: 40px;
 }
 .hrs_title {
@@ -304,71 +304,70 @@ header {
     color: white;
     margin-bottom: 65px;
 }
-.hrs_wrapper_block{
-    width: 1250px;
-}
-.hrs_wrapper {
-    width: 100%;
-    height: 200px;
+.opit_content {
+    height: 330px;
+    margin: 0;
     display: flex;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    right: 0;
+    justify-content: center;
+    align-items: center;
 }
-.hrs_block {
-    height: 100%;
-    width: 220px;
-    padding-right: 15px;
-    padding-left: 15px;
+.arrow_box {
+    width: 175px;
+    height: 330px;
+    display: flex;
+    align-items: center;
 }
-.hrs_block:hover .hrs_content_item {
+.arrow_box_left {
+    box-shadow: 5px 0 5px -5px rgba(0, 0, 0, .5);
+}
+.arrow_box_right {
+    box-shadow: -5px 0 5px -5px rgba(0, 0, 0, .5);
+}
+.arrow {
+    width: 175px;
+    height: 200px;
+}
+.opit_scroll {
+    width: 900px;
+    height: 330px;
+    display: flex;
+    overflow-x: auto;
+}
+.opit_scroll::-webkit-scrollbar {
+    display: none;
+}
+.card_content {
+    min-width: 280px;
+    margin-right: 10px;
+}
+.card_content_item {
+    width: 280px;
+    height: 280px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 50%;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    border: 4px solid #30d5c8;
+    transition: opacity .3s ease;
+}
+.card_content_item:hover {
     opacity: 1;
 }
-.hrs_block:hover .hrs_tile:after {
-    opacity: .5;
+.card_icon {
+    min-height: 280px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-size: cover;
 }
-.hrs_tile {
-    background-repeat: no-repeat;
-    background-size: cover; 
-    margin-bottom: 20px;
-    position: relative;
-    height: 100%;
-    
-    border-radius: 10px;
-    display: flex;
-}
-.hrs_tile:after {
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: '';
-    border-radius: 10px;
-    transition: opacity .3s ease;
-}
-.hrs_content_item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: 2;
-    transition: opacity .3s ease;
-}
-.hrs_text {
-    font-size: 24px;
+.card_text {
+    font-size: 25px;
     font-weight: 600;
     color: white;
-    letter-spacing: 0.23em;
-    position: absolute;
-    left: 15px;
-    bottom: 20px;
-    max-width: 200px;
+    position: relative;
+    left: 20px;
 }
+
 /* Contacts */
 
 .contacts {
