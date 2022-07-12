@@ -7,6 +7,19 @@ body {
     font-style:normal;
     font-weight: normal;
     margin: 0;
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+    width: 16px;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background-color: #30d5c8;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.9);
 }
 img {
     display: inline-block;
@@ -121,20 +134,8 @@ header {
 }
 .block_title {
     font-size: 31px;
-    margin-bottom: 15px;
+    margin-bottom: 65px;
     letter-spacing: 0.15em;
-}
-.block_link {
-    letter-spacing: 0.15em;
-    font-size: 18px;
-    color: black;
-    margin-bottom: 60px;
-    display: inline-block;
-    text-decoration: none;
-    transition: color .4s ease;
-}
-.block_link:hover {
-    color: #30d5c8;
 }
 .event_wrapper {
     display: flex;
@@ -259,26 +260,14 @@ header {
     background-attachment: fixed;
 }
 .hrs_content {
-    height: 720px;
+    height: 660px;
     padding-top: 40px;
 }
 .hrs_title {
     font-size: 31px;
     letter-spacing: 0.15em;
     color: black;
-    margin-bottom: 15px;
-}
-.hrs_link {
-    letter-spacing: 0.15em;
-    font-size: 18px;
-    color: black;
-    margin-bottom: 60px;
-    display: inline-block;
-    text-decoration: none;
-    transition: color .4s ease;
-}
-.hrs_link:hover {
-    color: #30d5c8;
+    margin-bottom: 65px;
 }
 .hrs_wrapper_block{
     width: 1250px;
